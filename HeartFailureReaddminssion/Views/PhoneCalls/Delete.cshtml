@@ -1,0 +1,73 @@
+﻿@model HeartFailureReaddminssion.Models.PhoneCall
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PhoneCall</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CallsMade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CallsMade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastCallDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastCallDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstCallUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstCallUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientReached)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientReached)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientResponse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientResponse)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

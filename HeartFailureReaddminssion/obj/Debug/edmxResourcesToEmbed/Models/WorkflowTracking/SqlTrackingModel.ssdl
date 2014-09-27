@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TrackingSampleModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ActivityInstanceEventsTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkflowInstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RecordNumber" Type="bigint" Nullable="false" />
+    <Property Name="State" Type="nvarchar" MaxLength="128" />
+    <Property Name="TraceLevelId" Type="tinyint" />
+    <Property Name="ActivityRecordType" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ActivityName" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ActivityId" Type="nvarchar" MaxLength="256" />
+    <Property Name="ActivityInstanceId" Type="nvarchar" MaxLength="256" />
+    <Property Name="ActivityType" Type="nvarchar" MaxLength="2048" />
+    <Property Name="SerializedArguments" Type="nvarchar(max)" />
+    <Property Name="SerializedVariables" Type="nvarchar(max)" />
+    <Property Name="SerializedAnnotations" Type="nvarchar(max)" />
+    <Property Name="TimeCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookmarkResumptionEventsTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkflowInstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RecordNumber" Type="bigint" />
+    <Property Name="TraceLevelId" Type="tinyint" />
+    <Property Name="BookmarkName" Type="nvarchar" MaxLength="1024" />
+    <Property Name="BookmarkScope" Type="uniqueidentifier" />
+    <Property Name="OwnerActivityName" Type="nvarchar" MaxLength="256" />
+    <Property Name="OwnerActivityId" Type="nvarchar" MaxLength="256" />
+    <Property Name="OwnerActivityInstanceId" Type="nvarchar" MaxLength="256" />
+    <Property Name="OwnerActivityType" Type="nvarchar" MaxLength="256" />
+    <Property Name="SerializedAnnotations" Type="nvarchar(max)" />
+    <Property Name="TimeCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomTrackingEventsTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkflowInstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RecordNumber" Type="bigint" />
+    <Property Name="TraceLevelId" Type="tinyint" />
+    <Property Name="CustomRecordName" Type="nvarchar" MaxLength="2048" />
+    <Property Name="ActivityName" Type="nvarchar" MaxLength="2048" />
+    <Property Name="ActivityId" Type="nvarchar" MaxLength="256" />
+    <Property Name="ActivityInstanceId" Type="nvarchar" MaxLength="256" />
+    <Property Name="ActivityType" Type="nvarchar" MaxLength="256" />
+    <Property Name="SerializedData" Type="nvarchar(max)" />
+    <Property Name="SerializedAnnotations" Type="nvarchar(max)" />
+    <Property Name="TimeCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExtendedActivityEventsTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkflowInstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RecordNumber" Type="bigint" />
+    <Property Name="TraceLevelId" Type="tinyint" />
+    <Property Name="ActivityRecordType" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ActivityName" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ActivityId" Type="nvarchar" MaxLength="256" />
+    <Property Name="ActivityInstanceId" Type="nvarchar" MaxLength="256" />
+    <Property Name="ActivityType" Type="nvarchar" MaxLength="2048" />
+    <Property Name="ChildActivityName" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ChildActivityId" Type="nvarchar" MaxLength="256" />
+    <Property Name="ChildActivityInstanceId" Type="nvarchar" MaxLength="256" />
+    <Property Name="ChildActivityType" Type="nvarchar" MaxLength="2048" />
+    <Property Name="FaultDetails" Type="nvarchar(max)" />
+    <Property Name="FaultHandlerActivityName" Type="nvarchar" MaxLength="1024" />
+    <Property Name="FaultHandlerActivityId" Type="nvarchar" MaxLength="256" />
+    <Property Name="FaultHandlerActivityInstanceId" Type="nvarchar" MaxLength="256" />
+    <Property Name="FaultHandlerActivityType" Type="nvarchar" MaxLength="2048" />
+    <Property Name="SerializedAnnotations" Type="nvarchar(max)" />
+    <Property Name="TimeCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkflowInstanceEventsTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkflowInstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="WorkflowActivityDefinition" Type="nvarchar" MaxLength="256" />
+    <Property Name="RecordNumber" Type="bigint" Nullable="false" />
+    <Property Name="State" Type="nvarchar" MaxLength="128" />
+    <Property Name="TraceLevelId" Type="tinyint" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="2048" />
+    <Property Name="ExceptionDetails" Type="nvarchar(max)" />
+    <Property Name="SerializedAnnotations" Type="nvarchar(max)" />
+    <Property Name="TimeCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TrackingSampleModelStoreContainer">
+    <EntitySet Name="ActivityInstanceEventsTable" EntityType="Self.ActivityInstanceEventsTable" Schema="Microsoft.Samples.Tracking" store:Type="Tables" />
+    <EntitySet Name="BookmarkResumptionEventsTable" EntityType="Self.BookmarkResumptionEventsTable" Schema="Microsoft.Samples.Tracking" store:Type="Tables" />
+    <EntitySet Name="CustomTrackingEventsTable" EntityType="Self.CustomTrackingEventsTable" Schema="Microsoft.Samples.Tracking" store:Type="Tables" />
+    <EntitySet Name="ExtendedActivityEventsTable" EntityType="Self.ExtendedActivityEventsTable" Schema="Microsoft.Samples.Tracking" store:Type="Tables" />
+    <EntitySet Name="WorkflowInstanceEventsTable" EntityType="Self.WorkflowInstanceEventsTable" Schema="Microsoft.Samples.Tracking" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

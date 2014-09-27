@@ -1,0 +1,5 @@
+obj\Debug\_HeartFailureReaddminssion.g.cs
+obj\Debug\HeartFailWorkflow.g.cs
+obj\Debug\HeartFail.g.cs
+obj\Debug\HeartFailureReaddminssion_Activity1_BeforeInitializeComponentHelper.cs
+obj\Debug\HeartFailureReaddminssion.Workflow_HeartFail_BeforeInitializeComponentHelper.cs

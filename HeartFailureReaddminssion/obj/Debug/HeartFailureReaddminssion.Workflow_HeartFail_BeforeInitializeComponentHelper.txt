@@ -1,0 +1,2 @@
+HeartFail.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

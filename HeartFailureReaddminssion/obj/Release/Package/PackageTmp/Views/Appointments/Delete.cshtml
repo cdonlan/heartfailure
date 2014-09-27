@@ -1,0 +1,97 @@
+﻿@model HeartFailureReaddminssion.Models.Appointment
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Appointment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EntryTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EntryTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentProvider)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentProvider)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentDepartment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentDepartment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentScheduledBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentScheduledBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentCheckIn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentCheckIn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OutpatioentHospitalAccount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OutpatioentHospitalAccount)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admin</h2>
+
+<ul>
+    <li>@Html.ActionLink("Workflow Instance Events", "Index", "WorkflowInstanceEventsTables")</li>
+    <li>@Html.ActionLink("Activity Instance Events", "Index", "ActivityInstanceEventsTables")</li>
+    <li>@Html.ActionLink("Custom Tracking Events", "Index", "CustomTrackingEventsTables")</li>
+    <li>@Html.ActionLink("Bookmark Resumption Events", "Index", "BookmarkResumptionEventsTables")</li>
+</ul>
+

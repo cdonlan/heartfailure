@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TrackingSampleModelStoreContainer" CdmEntityContainer="TrackingSampleEntities">
+    <EntitySetMapping Name="ActivityInstanceEventsTables">
+      <EntityTypeMapping TypeName="TrackingSampleModel.ActivityInstanceEventsTable">
+        <MappingFragment StoreEntitySet="ActivityInstanceEventsTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+          <ScalarProperty Name="RecordNumber" ColumnName="RecordNumber" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="TraceLevelId" ColumnName="TraceLevelId" />
+          <ScalarProperty Name="ActivityRecordType" ColumnName="ActivityRecordType" />
+          <ScalarProperty Name="ActivityName" ColumnName="ActivityName" />
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="ActivityInstanceId" ColumnName="ActivityInstanceId" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="SerializedArguments" ColumnName="SerializedArguments" />
+          <ScalarProperty Name="SerializedVariables" ColumnName="SerializedVariables" />
+          <ScalarProperty Name="SerializedAnnotations" ColumnName="SerializedAnnotations" />
+          <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookmarkResumptionEventsTables">
+      <EntityTypeMapping TypeName="TrackingSampleModel.BookmarkResumptionEventsTable">
+        <MappingFragment StoreEntitySet="BookmarkResumptionEventsTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+          <ScalarProperty Name="RecordNumber" ColumnName="RecordNumber" />
+          <ScalarProperty Name="TraceLevelId" ColumnName="TraceLevelId" />
+          <ScalarProperty Name="BookmarkName" ColumnName="BookmarkName" />
+          <ScalarProperty Name="BookmarkScope" ColumnName="BookmarkScope" />
+          <ScalarProperty Name="OwnerActivityName" ColumnName="OwnerActivityName" />
+          <ScalarProperty Name="OwnerActivityId" ColumnName="OwnerActivityId" />
+          <ScalarProperty Name="OwnerActivityInstanceId" ColumnName="OwnerActivityInstanceId" />
+          <ScalarProperty Name="OwnerActivityType" ColumnName="OwnerActivityType" />
+          <ScalarProperty Name="SerializedAnnotations" ColumnName="SerializedAnnotations" />
+          <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomTrackingEventsTables">
+      <EntityTypeMapping TypeName="TrackingSampleModel.CustomTrackingEventsTable">
+        <MappingFragment StoreEntitySet="CustomTrackingEventsTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+          <ScalarProperty Name="RecordNumber" ColumnName="RecordNumber" />
+          <ScalarProperty Name="TraceLevelId" ColumnName="TraceLevelId" />
+          <ScalarProperty Name="CustomRecordName" ColumnName="CustomRecordName" />
+          <ScalarProperty Name="ActivityName" ColumnName="ActivityName" />
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="ActivityInstanceId" ColumnName="ActivityInstanceId" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="SerializedData" ColumnName="SerializedData" />
+          <ScalarProperty Name="SerializedAnnotations" ColumnName="SerializedAnnotations" />
+          <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExtendedActivityEventsTables">
+      <EntityTypeMapping TypeName="TrackingSampleModel.ExtendedActivityEventsTable">
+        <MappingFragment StoreEntitySet="ExtendedActivityEventsTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+          <ScalarProperty Name="RecordNumber" ColumnName="RecordNumber" />
+          <ScalarProperty Name="TraceLevelId" ColumnName="TraceLevelId" />
+          <ScalarProperty Name="ActivityRecordType" ColumnName="ActivityRecordType" />
+          <ScalarProperty Name="ActivityName" ColumnName="ActivityName" />
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="ActivityInstanceId" ColumnName="ActivityInstanceId" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="ChildActivityName" ColumnName="ChildActivityName" />
+          <ScalarProperty Name="ChildActivityId" ColumnName="ChildActivityId" />
+          <ScalarProperty Name="ChildActivityInstanceId" ColumnName="ChildActivityInstanceId" />
+          <ScalarProperty Name="ChildActivityType" ColumnName="ChildActivityType" />
+          <ScalarProperty Name="FaultDetails" ColumnName="FaultDetails" />
+          <ScalarProperty Name="FaultHandlerActivityName" ColumnName="FaultHandlerActivityName" />
+          <ScalarProperty Name="FaultHandlerActivityId" ColumnName="FaultHandlerActivityId" />
+          <ScalarProperty Name="FaultHandlerActivityInstanceId" ColumnName="FaultHandlerActivityInstanceId" />
+          <ScalarProperty Name="FaultHandlerActivityType" ColumnName="FaultHandlerActivityType" />
+          <ScalarProperty Name="SerializedAnnotations" ColumnName="SerializedAnnotations" />
+          <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowInstanceEventsTables">
+      <EntityTypeMapping TypeName="TrackingSampleModel.WorkflowInstanceEventsTable">
+        <MappingFragment StoreEntitySet="WorkflowInstanceEventsTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+          <ScalarProperty Name="WorkflowActivityDefinition" ColumnName="WorkflowActivityDefinition" />
+          <ScalarProperty Name="RecordNumber" ColumnName="RecordNumber" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="TraceLevelId" ColumnName="TraceLevelId" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="ExceptionDetails" ColumnName="ExceptionDetails" />
+          <ScalarProperty Name="SerializedAnnotations" ColumnName="SerializedAnnotations" />
+          <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

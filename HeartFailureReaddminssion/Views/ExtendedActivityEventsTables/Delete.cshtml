@@ -1,0 +1,177 @@
+﻿@model HeartFailureReaddminssion.Models.WorkflowTracking.ExtendedActivityEventsTable
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ExtendedActivityEventsTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkflowInstanceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkflowInstanceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecordNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecordNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TraceLevelId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TraceLevelId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityRecordType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivityRecordType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivityId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityInstanceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivityInstanceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivityType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildActivityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildActivityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildActivityId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildActivityId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildActivityInstanceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildActivityInstanceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildActivityType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildActivityType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaultDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaultDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaultHandlerActivityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaultHandlerActivityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaultHandlerActivityId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaultHandlerActivityId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaultHandlerActivityInstanceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaultHandlerActivityInstanceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaultHandlerActivityType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaultHandlerActivityType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SerializedAnnotations)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerializedAnnotations)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeCreated)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

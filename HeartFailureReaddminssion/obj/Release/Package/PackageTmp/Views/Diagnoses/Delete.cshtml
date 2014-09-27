@@ -1,0 +1,81 @@
+﻿@model HeartFailureReaddminssion.Models.Diagnosis
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Diagnosis</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EncounterID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EncounterID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LineNBR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LineNBR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ICD9DiagnosisCD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ICD9DiagnosisCD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnosisPOA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnosisPOA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnosisNM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnosisNM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnosisGroupDSC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnosisGroupDSC)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

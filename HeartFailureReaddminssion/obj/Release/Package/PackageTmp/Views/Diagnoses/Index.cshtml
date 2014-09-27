@@ -1,0 +1,70 @@
+﻿@model IEnumerable<HeartFailureReaddminssion.Models.Diagnosis>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Diagnoses</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EncounterID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LineNBR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ICD9DiagnosisCD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiagnosisPOA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiagnosisNM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiagnosisGroupDSC)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EncounterID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LineNBR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ICD9DiagnosisCD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiagnosisPOA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiagnosisNM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiagnosisGroupDSC)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DiagnosisID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DiagnosisID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DiagnosisID })
+        </td>
+    </tr>
+}
+
+</table>

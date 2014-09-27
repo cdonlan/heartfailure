@@ -1,0 +1,10 @@
+D:\WF_WC_Samples\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking\CS\SqlTrackingParticipant\bin\Debug\SqlTrackingParticipant.dll
+D:\WF_WC_Samples\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking\CS\SqlTrackingParticipant\bin\Debug\SqlTrackingParticipant.pdb
+D:\WF_WC_Samples\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking\CS\SqlTrackingParticipant\obj\x86\Debug\SqlTrackingParticipant.csprojResolveAssemblyReference.cache
+D:\WF_WC_Samples\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking\CS\SqlTrackingParticipant\obj\x86\Debug\SqlTrackingParticipant.dll
+D:\WF_WC_Samples\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking\CS\SqlTrackingParticipant\obj\x86\Debug\SqlTrackingParticipant.pdb
+C:\Users\chdonlan\Downloads\HeartFailureReadminssion+$2$\HeartFailureReadminssion\SqlTrackingParticipant\bin\Debug\SqlTrackingParticipant.dll
+C:\Users\chdonlan\Downloads\HeartFailureReadminssion+$2$\HeartFailureReadminssion\SqlTrackingParticipant\bin\Debug\SqlTrackingParticipant.pdb
+C:\Users\chdonlan\Downloads\HeartFailureReadminssion+$2$\HeartFailureReadminssion\SqlTrackingParticipant\obj\x86\Debug\SqlTrackingParticipant.csprojResolveAssemblyReference.cache
+C:\Users\chdonlan\Downloads\HeartFailureReadminssion+$2$\HeartFailureReadminssion\SqlTrackingParticipant\obj\x86\Debug\SqlTrackingParticipant.dll
+C:\Users\chdonlan\Downloads\HeartFailureReadminssion+$2$\HeartFailureReadminssion\SqlTrackingParticipant\obj\x86\Debug\SqlTrackingParticipant.pdb

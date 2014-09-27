@@ -1,0 +1,107 @@
+﻿@model HeartFailureReaddminssion.Models.WorkflowTracking.BookmarkResumptionEventsTable
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BookmarkResumptionEventsTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkflowInstanceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkflowInstanceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecordNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecordNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TraceLevelId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TraceLevelId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookmarkName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookmarkName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookmarkScope)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookmarkScope)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerActivityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerActivityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerActivityId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerActivityId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerActivityInstanceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerActivityInstanceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerActivityType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerActivityType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SerializedAnnotations)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerializedAnnotations)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeCreated)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

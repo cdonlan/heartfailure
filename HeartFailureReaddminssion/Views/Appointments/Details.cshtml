@@ -1,0 +1,91 @@
+﻿@model HeartFailureReaddminssion.Models.Appointment
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Appointment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EntryTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EntryTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentProvider)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentProvider)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentDepartment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentDepartment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentScheduledBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentScheduledBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentCheckIn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentCheckIn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OutpatioentHospitalAccount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OutpatioentHospitalAccount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,90 @@
+﻿@model IEnumerable<HeartFailureReaddminssion.Models.WorkflowTracking.BookmarkResumptionEventsTable>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkflowInstanceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecordNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraceLevelId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookmarkName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookmarkScope)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OwnerActivityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OwnerActivityId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OwnerActivityInstanceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OwnerActivityType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SerializedAnnotations)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeCreated)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkflowInstanceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecordNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TraceLevelId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookmarkName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookmarkScope)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OwnerActivityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OwnerActivityId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OwnerActivityInstanceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OwnerActivityType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SerializedAnnotations)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeCreated)
+        </td>
+       
+    </tr>
+}
+
+</table>

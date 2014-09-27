@@ -1,0 +1,59 @@
+﻿@model HeartFailureReaddminssion.Models.Record
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Record</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicationId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicationId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedListComplete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedListComplete)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,136 @@
+﻿@model IEnumerable<HeartFailureReaddminssion.Models.WorkflowTracking.ExtendedActivityEventsTable>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkflowInstanceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecordNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraceLevelId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActivityRecordType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActivityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActivityId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActivityInstanceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActivityType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChildActivityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChildActivityId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChildActivityInstanceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChildActivityType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FaultDetails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FaultHandlerActivityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FaultHandlerActivityId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FaultHandlerActivityInstanceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FaultHandlerActivityType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SerializedAnnotations)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeCreated)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkflowInstanceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecordNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TraceLevelId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActivityRecordType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActivityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActivityId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActivityInstanceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActivityType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChildActivityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChildActivityId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChildActivityInstanceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChildActivityType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FaultDetails)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FaultHandlerActivityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FaultHandlerActivityId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FaultHandlerActivityInstanceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FaultHandlerActivityType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SerializedAnnotations)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeCreated)
+        </td>
+       
+    </tr>
+}
+
+</table>

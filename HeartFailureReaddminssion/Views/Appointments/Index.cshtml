@@ -1,0 +1,82 @@
+﻿@model IEnumerable<HeartFailureReaddminssion.Models.Appointment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntryTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentProvider)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentDepartment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentScheduledBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentCheckIn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OutpatioentHospitalAccount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntryTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentProvider)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentDepartment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentScheduledBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentCheckIn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OutpatioentHospitalAccount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

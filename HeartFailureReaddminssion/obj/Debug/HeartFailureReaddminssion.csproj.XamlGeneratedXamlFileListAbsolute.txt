@@ -1,0 +1,4 @@
+obj\Debug\HeartFailWorkflow.g.xaml
+obj\Debug\HeartFail.g.xaml
+obj\Debug\HeartFailureReaddminssion_Activity1_BeforeInitializeComponentHelper.txt
+obj\Debug\HeartFailureReaddminssion.Workflow_HeartFail_BeforeInitializeComponentHelper.txt

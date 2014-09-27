@@ -1,0 +1,6 @@
+obj\Release\_HeartFailureReaddminssion.g.cs
+obj\Release\HeartFailWorkflow.g.cs
+obj\Release\HeartFail.g.cs
+obj\Release\HeartFailureReaddminssion_Activity1_BeforeInitializeComponentHelper.cs
+obj\Release\HeartFailureReaddminssion.Workflow_HeartFail_BeforeInitializeComponentHelper.cs
+E:\Projects\HeartFailureReadminssion\HeartFailureReaddminssion\obj\Release\HeartFailureReaddminssion.Workflow_HeartFail_CompiledExpressionRoot.cs
